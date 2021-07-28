@@ -1,0 +1,186 @@
+<!--
+JOHN ALEX CORDOBA
+
+WEB RESPONSIVE-->
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8"/>
+
+<title>CSS GRID</title>
+
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Patrick+Hand|Rock+Salt|Special+Elite" rel="stylesheet">
+	<script src="ajax/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+    	touch: true,
+    	pauseOnAction: false,
+    	pauseOnHover: false,
+    });
+  });
+</script>
+     
+</head>
+<body>
+        
+        <header>
+				<div id="contenedor">
+					<img src="imag/logoU.png" class="logo"  />  
+					<h1 class="item h1">PROYECTO DE SITIO WEB 2021 </h1>
+				</div>
+				<div class="flexslider">
+					<ul class="slides">
+					<li>
+						<img src="imag/slider1.png" alt="">
+						<section class="flex-caption">
+							<p></p>
+						</section>
+					</li>
+					<li>
+						<img src="imag/slider2.png" alt="">
+						<section class="flex-caption">
+							<p></p>
+						</section>
+					</li>
+					<li>
+						<img src="imag/slider3.png" alt="">
+						<section class="flex-caption">
+							<p></p>
+						</section>
+					</li>
+					</ul>
+				</div>
+		<input type="checkbox" id="btn-menu">
+		<label for="btn-menu"><img src="imag/icono-menu.png" alt="">
+		</label>
+		<nav class="menu">
+		
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="#">TEMAS</a>
+				<ul>
+					<li><a href="html5.html">Flexbox</a></li>
+					<li><a href="css3.html">CSS GRID</a></li>
+				</ul>
+				</li>
+				<li><a href="#">RECURSOS DIGITALES</a>
+					<ul>
+					<li><a href="multimedia.html">RECURSO_1</a></li>
+					<li><a href="recurso2.html">RECURSO_2</a></li>
+					</ul>
+				</li>
+				<li><a href="#">APRENDIZAJE</a>
+					<ul>
+					<li><a href="actividad1.html">ACTIVIDAD 1</a></li>
+					<li><a href="actividad2.html">ACTIVIDAD 2</a></li>
+					</ul>
+				</li>
+				<li><a href="autor.html">AUTOR</a>
+			</ul>
+		</nav>
+   </header>
+   <section>
+		<div id="contenido">
+			<div id="info">
+				<article>
+					<h2  class="item h2" >CSS GRID</h2>
+				
+					<p>Como las últimas versiones de los navegadores ya ofrecen soporte para CSS Grid,  sólo es necesario familiarizarse con su forma de trabajar de rejilla y aplicar el nuevo display: grid con el que comenzaremos a usar todas sus característicaspara posicionar los elementos en la página:.  </p> <br>
+					
+					<p><b>Ofrece un control total de las dos dimensiones.</b></p> <br>
+
+					<p><b>La ubicación de los ítems es libre; no es una tabla.</b></p> <br>
+					<p><b>Es posible colocar los ítem donde necesitemos, en cualquiera de las celdas que el Grid describe, incluso en celdas que no has descrito..</b></p> <br>
+					<p><b>Puede haber ítems que se coloquen solos gracias al su característica de auto-placement.</b></p> <br>
+					<p><b>También podemos conseguir comportamientos similares con una cantidad de atributos novedosas, aunque con distintos matices que las diferencian..</b></p> <br>
+				     
+				<p>	Antes de comenzar con <b>Grid CSS,</b>  quizás sería conveniente dominar el sistema <b>Flexbox,</b>  ya que Grid toma la filosofía y bases de él. Para utilizar <b>Grid CSS</b>  necesitaremos tener en cuenta una serie de conceptos que utilizaremos a partir de ahora y que definiremos a continuación:</p>
+
+
+
+					<h2 class="item h9"><img src="imag/5.png" width="60%" height="auto"/></h2>
+					
+					<p><b>Contenedor: </b> El elemento padre contenedor que definirá la cuadrícula o rejilla..</p>
+					<p><b>Ítem:</b> Cada uno de los hijos que contiene la cuadrícula (elemento contenedor).</p>
+					<p><b>Celda (grid cell): </b>Cada uno de los cuadritos (unidad mínima) de la cuadrícula.</p>
+					<p><b>Area (grid area): </b>Región o conjunto de celdas de la cuadrícula.</p> 
+					<p><b>Banda (grid track): </b>Banda horizontal o vertical de celdas de la cuadrícula.</p> 
+					<p><b>Línea (grid line): </b>Separador horizontal o vertical de las celdas de la cuadrícula.</p> <br>
+                    <p>Para utilizar cuadriculas <b>Grid CSS,</b> trabajaremos bajo el siguiente escenario:</p>
+					<h2 class="item h9"><img src="imag/6.png" width="80%" height="auto"/></h2>
+
+
+				<p>	Para activar la cuadrícula <b>grid </b> hay que utilizar sobre el elemento contenedor la propiedad <b>display</b> y especificar el valor <b>grid </b> o <b>inline-grid.</b></p>
+					<br>
+					
+					<h2 class="item h9"><img src="imag/7.png" width="90%" height="auto"/></h2><br>
+					
+					<p>Este valor influye en como se comportará la cuadrícula con el contenido exterior. El primero de ellos permite que la cuadrícula aparezca encima/debajo del contenido exterior (en bloque) y el segundo de ellos permite que la cuadrícula aparezca a la izquierda/derecha (en línea) del contenido exterior </p>
+					<br>
+					<h2 class="item h9"><img src="imag/8.png" width="90%" height="auto"/></h2><br>
+					<p>
+					<b>1.</b> Con una Hoja de Estilo podemos modificar la presentación de cada elemento sin modificar el código HTML, ahorrando esfuerzo y tiempo de edición. Así, el
+					mantenimiento del sitio web se hace más sencillo. 
+					</p>
+					<br>
+					<h2  class="item h2" >Grid con filas y columnas</h2>
+					<br>
+					<br>
+
+					<p>Es posible crear cuadrículas con un tamaño explícito. Para ello, sólo tenemos que usar las propiedades CSS grid-template-columns y grid-template-rows, que sirven para indicar las dimensiones de cada celda de la cuadrícula, diferenciando entre columnas y filas. Las propiedades son las siguientes:
+					</p>
+					<br>
+					<h2 class="item h9"><img src="imag/9.png" width="90%" height="auto"/></h2><br>
+					<p>
+					<b> Conociendo estas dos propiedades, asumamos el siguiente código CSS:</b>	</p>
+					<br>
+					<h2 class="item h9"><img src="imag/10.png" width="90%" height="auto"/></h2><br>
+				
+					<p>Esto significa que tendremos una cuadricula con 2 columnas (la primera con 50px de ancho y la segunda con 300px de ancho) y con 2 filas (la primera con 200px de alto y la segunda con 75px de alto). Ahora, dependiendo del número de ítems (elementos hijos) que tenga el contenedor grid, tendremos una cuadrícula de 2x2 elementos (4 ítems), 2x3 elementos (6 ítems), 2x4 elementos (8 ítems) y así sucesivamente. Si el número de ítems es impar, la última celda de la cuadrícula se quedará vacía.
+					</p>
+					<br>
+					<h2 class="item h9"><img src="imag/11.png" width="50%" height="auto"/></h2><br>
+					<h2 class="item h9"><img src="imag/12.png" width="90%" height="auto"/></h2><br>
+					<p>A medida que fueramos incluyendo más ítems en el grid, podríamos aumentar también el número de parámetros de grid-template-columns y/o grid-template-rows. Ten en cuenta que en este caso, tenemos dos valores en cada propiedad (2x2), lo que hacen una cuadrícula de 4 elementos, que es justo el número de ítems en el HTML.
+					</p>
+					<br>
+					
+				</article>
+				<h2 class="item h8"></h2>
+				<article>
+				
+					<p><b>Referencias:</b> Iglesias, C. (03 de febrero de 2005). Obtenido de
+						https://es.slideshare.net/CarlosIglesias3/introduccin-css</p>
+				</article>				
+			</div>
+				
+				<aside>
+						<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/UniversidadUNAD" data-widget-id="251584198211674113">Tweets por el @UniversidadUNAD.</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+						<article class="contador"><h4>VISITAS:</h4>
+								
+							<script  type="text/javascript" class="cont" src="../../rf.revolvermaps.com/0/0/106ca.js?i=5perzhogie6&amp;s=198&amp;m=0&amp;v=true&amp;r=false&amp;b=000000&amp;n=false&amp;c=0006ff" async="async"></script>			
+						
+						</article>
+				</aside>	
+		</div>	
+	</section>
+</body>
+	<div id="piepagina">
+		<footer>
+			<footer>
+				PROYECTO DE SITIO WEB - 301122_17 / 2021 
+				<BR>
+				Univerisdad Nacional Abierta y a Distancia UNAD -2021
+				<br>
+				<b>Fecha de actualización:</b> 11-07-2021
+		</footer>
+	</div>
+</html>
